@@ -16,6 +16,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -55,12 +58,6 @@ button {
   background-color: #d9d9d9;
 }
 
-.page {
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-}
-
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -68,7 +65,9 @@ button {
   gap: 30px;
   grid-template-rows: auto;
   width: 1140px;
-  padding: 133px 30px;
+  padding-top: 133px;
+  padding-left: 0px;
+  padding-right: 30px;
 }
 
 .result {
