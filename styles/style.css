@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -37,6 +37,11 @@ ol {
   list-style: none;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+}
+
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -47,5 +52,332 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
+}
+
+.page {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 30px;
+  grid-template-rows: auto;
+  width: 1140px;
+  padding: 133px 30px;
+}
+
+.result {
+  width: 100%;
+  height: 100%;
+  padding-top: 78px;
+}
+
+.result__video-container {
+  position: relative;
+  width: 711px;
+  height: 386px;
+  padding-bottom: 17px;
+}
+
+.result__video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.search-form__fieldset {
+  border: none;
+  padding-right: 40px;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  appearance: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__textfield {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-left: 0px;
+  border-right: 0px;
+  width: 225px;
+  height: 27px;
+  appearance: none;
+}
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 5px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__checkbox {
+}
+
+.search-form__pseudo-checkbox {
+}
+
+input[type="checkbox"] + span {
+  content: "";
+  width: 19px;
+  height: 19px;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+input[type="checkbox"] + span::after {
+  content: "";
+  display: block;
+  accent-color: white;
+  width: 18px;
+  height: 18px;
+  justify-items: center;
+}
+
+input[type="checkbox"]:checked + span {
+  content: "";
+  background-color: white;
+  background-position: center;
+}
+
+.button {
+  background-color: transparent;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #fff;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+}
+
+.button:active {
+  background-color: rgba(84, 80, 80, 1);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__label:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #fff;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+}
+
+.search-form__label:active {
+}
+
+.search-form__submit-button {
+  align-self: end;
+  justify-self: end;
+  width: 194px;
+  height: 34px;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding: 0px 140px 26px 0px;
+  font-family: Oswald;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-transform: uppercase;
+}
+
+.content__card-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content__card-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.content__card-link:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #fff;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__accent {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.content__list-container {
+  position: relative;
+  height: 298px;
+  width: 399px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content__list {
+  display: grid;
+  gap: 30px;
+}
+
+.content__card-link_current {
+  background-color: rgba(84, 80, 80, 1);
+  outline-offset: 1px;
+}
+
+.content__list-item {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.preloader-template {
+}
+
+.preloader {
+}
+
+.preloader-chasing-squares {
+}
+
+.square {
+}
+
+.cards-list-item-template {
+}
+
+.content__video-card {
+  display: flex;
+  align-items: start;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__video-card-title {
+  display: block;
+  width: 200px;
+  height: 30px;
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  line-clamp: initial;
+  padding-top: 6px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.more-button-template {
+}
+
+.more-button {
+  width: 100%;
+  height: 34px;
+}
+
+.error-template {
+}
+
+.error {
+}
+
+.error__title {
 }
