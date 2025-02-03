@@ -20,7 +20,6 @@ html {
   background-color: #1b1919;
   width: 1200px;
   display: flex;
-  justify-content: center;
 }
 
 h1,
@@ -66,7 +65,7 @@ button {
   gap: 30px;
   grid-template-rows: auto;
   width: 1140px;
-  padding-top: 333px;
+  padding-top: 133px;
   padding-left: 0px;
   padding-right: 30px;
 }
