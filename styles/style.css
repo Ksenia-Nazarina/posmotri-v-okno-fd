@@ -158,6 +158,14 @@ button {
   gap: 15px;
 }
 
+.search-form__checkbox-list .search-form__label:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #fff;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+}
+
 input[type="checkbox"] + span {
   content: "";
   width: 19px;
